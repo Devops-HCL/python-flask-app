@@ -1,14 +1,12 @@
-import os
-from flask import Flask
+from flask import Flask, request
+
 app = Flask(__name__)
 
-@app.route("/")
+@app.route('/')
 def main():
-    return "Welcome!"
+    name = input("Enter your name: ")
+    age = int(input("Enter your age: "))
+    return f"Hello, {name}! You are {age} years old."
 
-@app.route('/how are you')
-def hello():
-    return 'I am good, how about you?'
-
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8080)
+if __name__ == '__main__':
+    app.run()
