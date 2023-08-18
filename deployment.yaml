@@ -16,7 +16,5 @@ spec:
         - name: python-app
           image: gcr.io/ingproject/flaskapp:2
           envFrom:
-            - configMapKeyRef:
-                name: app-config
-            
-                  
+            - configMapRef:
+                name: app-config-2
