@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: python-app-service
+spec:
+  selector:
+    app: python-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080  # Assuming your Python app listens on port 8080
+  type: LoadBalancer  # Use 'ClusterIP' for an internal service
+  
