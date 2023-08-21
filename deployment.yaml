@@ -18,4 +18,4 @@ spec:
           image: azurehareesh/pythonapp:1
           envFrom:
             - configMapRef:
-                name: app-config
+                name: app-config-editor  
