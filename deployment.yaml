@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
         - name: python-app
-          image: gcr.io/ingproject/flaskapp:2
+          #image: gcr.io/ingproject/flaskapp:2
+          image: azurehareesh/pythonapp:1
           envFrom:
             - configMapRef:
                 name: app-config
