@@ -1,8 +1,8 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: app-config
+  name: app-config-editor
 data:
-  NAME: hareesh
+  NAME: editor
   SAP_ID: "222222"
   
