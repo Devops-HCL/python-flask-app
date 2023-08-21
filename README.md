@@ -29,7 +29,8 @@ Install Python Flask dependency
 
 Start web server
 
-    python app.py
+    ![image](https://github.com/Devops-HCL/python-flask-app/assets/131745278/419bbc17-dd92-4fa4-b1a1-3a9bc10e7bef)
+
     
 ## 4. Test
 
