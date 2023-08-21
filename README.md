@@ -21,7 +21,7 @@ This is used in the demonstration of development of Ansible Playbooks.
 Install Python Flask dependency
 
     pip install flask
-    pip install flask-mysql
+ 
 
 - Copy app.py or download it from source repository
 - Configure database credentials and parameters 
@@ -30,11 +30,11 @@ Install Python Flask dependency
 
 Start web server
 
-    FLASK_APP=app.py flask run --host=0.0.0.0
+    python app.py
     
 ## 4. Test
 
 Open a browser and go to URL
 
-    http://<IP>:5000                            => Welcome
-    http://<IP>:5000/how%20are%20you            => I am good, how about you?
+    http://<IP>:5000                          
+ 
