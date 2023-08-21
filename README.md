@@ -29,7 +29,18 @@ Install Python Flask dependency
 
 Start web server
 
-    ![image](https://github.com/Devops-HCL/python-flask-app/assets/131745278/419bbc17-dd92-4fa4-b1a1-3a9bc10e7bef)
+    from flask import Flask, request
+
+app = Flask(__name__)
+
+@app.route('/')
+def main():
+    name = input("NAME: ")
+    sap_id = int(input("SAP_ID: "))
+    return f"Hello, {name}! Welcome! Your sap id {sap_id}."
+
+if __name__ == '__main__':
+    app.run()
 
     
 ## 4. Test
